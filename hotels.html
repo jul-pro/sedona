@@ -11,7 +11,7 @@
 		<header class="main-header">
 			<h1 class="visually-hidden">Поиск отелей</h1>
 			<nav class="main-nav">
-				<a href="" class="logo">
+				<a href="index.html" class="logo">
 					<img src="img/logo.png" alt="Логотип ">
 				</a>
 				<ul class="main-menu-list">
@@ -28,71 +28,80 @@
 				<form action="echo.htmlacademy.ru" class="filter" method="get">
 					<fieldset>
 						<legend>Инфраструктура:</legend>
-						<ul>
+						<ul class="filter-options-list">
 							<li class="filter-option">
 								<label>
 									<input type="checkbox" class="filter-input filter-input-checkbox visually-hidden">
-									<span class="checkbox-indicator"></span>Бассейн
+									<span class="checkbox-indicator"></span>
+									<span>Бассейн</span>
+								</label>
+							</li>
+							<li class="filter-option">
+								<label>
+									<input type="checkbox" class="filter-input filter-input-checkbox visually-hidden" checked="" disabled="">
+									<span class="checkbox-indicator"></span>
+									<span>Парковка</span>
 								</label>
 							</li>
 							<li class="filter-option">
 								<label>
 									<input type="checkbox" class="filter-input filter-input-checkbox visually-hidden">
-									<span class="checkbox-indicator"></span>Парковка
-								</label>
-							</li>
-							<li class="filter-option">
-								<label>
-									<input type="checkbox" class="filter-input filter-input-checkbox visually-hidden">
-									<span class="checkbox-indicator"></span>WI-FI
+									<span class="checkbox-indicator"></span>
+									<span>WI-FI</span>
 								</label>
 							</li>
 						</ul>
 					</fieldset>
 					<fieldset>
 						<legend>Тип жилья:</legend>
-						<ul>
+						<ul class="filter-options-list">
 							<li class="filter-option">
 								<label>
 									<input type="checkbox" class="filter-input filter-input-checkbox visually-hidden">
-									<span class="checkbox-indicator"></span>Бассейн
+									<span class="checkbox-indicator"></span>
+									<span>Гостиница</span>
 								</label>
 							</li>
 							<li class="filter-option">
 								<label>
 									<input type="checkbox" class="filter-input filter-input-checkbox visually-hidden">
-									<span class="checkbox-indicator"></span>Парковка
+									<span class="checkbox-indicator"></span>
+									<span>Мотель</span>
 								</label>
 							</li>
 							<li class="filter-option">
 								<label>
 									<input type="checkbox" class="filter-input filter-input-checkbox visually-hidden">
-									<span class="checkbox-indicator"></span>WI-FI
+									<span class="checkbox-indicator"></span>
+									<span>Апартаменты</span>
 								</label>
 							</li>
 						</ul>
 					</fieldset>
-					<fieldset class="filter-range">
-						<legend>
-							Стоимость в сутки (Р):
-						</legend>
-						<label>
-							От
-							<input type="text" name="min-price" class="price min-price" value="0">
-						</label>
-						<label>
-							До
-							<input type="text" name="max-price" class="price max-price" value="3000">
-						</label>
-						<div class="range-controls">
-							<div class="scale">
-								<div class="bar"></div>
+					
+						<fieldset class="filter-range">
+							<legend>
+								Стоимость в сутки (Р):
+							</legend>
+							<div class="range-inputs">
+								<label>
+									От
+									<input type="text" name="min-price" class="price min-price" value="0">
+								</label>
+								<label>
+									До
+									<input type="text" name="max-price" class="price max-price" value="3000">
+								</label>
 							</div>
-							<div class="range-toggle range-toggle-min"></div>
-							<div class="range-toggle range-toggle-max"></div>
-						</div>
-					</fieldset>
-					<button class="btn btn-submit" type="submit">Показать</button>
+							<div class="range-controls">
+								<div class="scale">
+									<div class="bar"></div>
+								</div>
+								<div class="range-toggle range-toggle-min"></div>
+								<div class="range-toggle range-toggle-max"></div>
+							</div>
+							<button class="btn btn-submit" type="submit">Показать</button>
+						</fieldset>							
 				</form>
 			</section>
 			<section class="results">
@@ -108,7 +117,7 @@
 				</p>
 				<ul class="results-list">
 					<li class="result-list-item">
-						<img src="" alt="Фото Amara Resort &amp; Spa" width="135" height="90">
+						<img src="img/hotel-1.jpg" alt="Фото Amara Resort &amp; Spa" width="135" height="90">
 						<div class="info-blok">
 							<div class="title-wrap">
 								<h3 class="hotel-name">Amara Resort &amp; Spa</h3>
@@ -134,7 +143,7 @@
 						</div>
 					</li>
 					<li class="result-list-item">
-						<img src="" alt="Фото Desert Quail Inn" width="135" height="90">
+						<img src="img/hotel-2.jpg" alt="Фото Desert Quail Inn" width="135" height="90">
 						<div class="info-blok">
 							<div class="title-wrap">
 								<h3 class="hotel-name">Desert Quail Inn</h3>
@@ -159,7 +168,7 @@
 						</div>
 					</li>
 					<li class="result-list-item">
-						<img src="" alt="Фото Villas at Poco Diablo" width="135" height="90">
+						<img src="img/hotel-3.jpg" alt="Фото Villas at Poco Diablo" width="135" height="90">
 						<div class="info-blok">
 							<div class="title-wrap">
 								<h3 class="hotel-name">Villas at Poco Diablo</h3>

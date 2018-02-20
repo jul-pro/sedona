@@ -425,3 +425,209 @@ input[type="radio"].visually-hidden {
 .map img {
 	object-fit: cover;
 }
+
+.filters {
+	padding: 27px 5.5% 33px;
+
+	background: url("../img/filters-bg.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	color: #fff;
+}
+
+.filter {
+	display: flex;
+}
+
+.filter fieldset {
+	margin: 0;
+	margin-right: 7.2%;
+	padding: 0;
+	border: 0;
+}
+
+.filter legend {
+	margin-bottom: 25px;
+	padding: 0;
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 21px;
+}
+
+.filter > :last-child {
+	margin-right: 0;
+	margin-left: auto;
+}
+
+.filter-options-list {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+.filter-option {
+	position: relative;
+	margin-bottom: 25px;
+	padding-left: 40px;
+}
+
+.filter-option label {
+	cursor: pointer;
+}
+
+input[type="checkbox"] + .checkbox-indicator {
+	
+	position: absolute;
+	top: -1px;
+	left: 0;
+	
+	height: 23px;
+	width: 23px;
+	
+	background-image: url(../img/checkbox-off.svg);
+	background-position: 0 50%;
+	background-repeat: no-repeat;
+}
+
+input[type="checkbox"]:checked + .checkbox-indicator{
+	width: 27px;
+
+	background-image: url(../img/checkbox-on.svg);
+	background-position: 0 50%;
+	background-repeat: no-repeat;
+} 
+
+input[type="checkbox"]:focus + .checkbox-indicator,
+input[type="checkbox"]:hover:not([disabled]) + .checkbox-indicator {
+	height: 25px;
+	border-color: #663d15;
+	outline: thin dotted;
+	outline: 5px auto -webkit-focus-ring-color;
+
+}
+
+input[type="checkbox"]:disabled + .checkbox-indicator  {
+	opacity: 0.5;
+}
+
+input[type="checkbox"]:disabled ~ span  {
+	opacity: 0.5;
+	cursor: default;
+}
+
+.filter-options-list :last-child {
+	margin-bottom: 0;
+}
+
+.filter-range {
+	width: 28%;
+}
+
+.range-inputs {
+	position: relative;
+	display: flex;
+	justify-content: flex-end;
+
+	margin-bottom: 20px;
+
+	border: 2px solid #fff;
+	border-radius: 2px;
+}
+
+.range-inputs::after {
+	position: absolute;
+	content: "";
+
+	top: 50%;
+	left: 50%;
+
+	width: 2px;
+	height: 80%;
+	background-color: #fff;
+	transform: translate(-50%, -50%);
+}
+
+.range-inputs label {
+	display: flex;
+	justify-content: flex-end;
+	line-height: 32px;
+	text-align: right;
+	align-items: baseline;
+}
+
+.range-inputs input[type=text] {
+	width: 50%;
+	margin-left: 2%;
+	
+	font: inherit;
+	color: inherit;
+
+	border: 0;
+	background: transparent;
+}
+
+.range-controls {
+	position: relative;
+	margin-bottom: 35px;
+}
+
+.range-controls .scale {
+	height: 2px;
+	background: rgba(255, 255, 255, 0.3);
+}
+
+.range-controls .bar {
+	height: 2px;
+	width: 80%;
+
+	background-color: #fff;
+}
+
+.range-toggle {
+	position: absolute;
+	width: 4px;
+	height: 4px;
+	
+	top: -9px;
+
+	border: 8px solid #fff;
+	border-radius: 50%;
+
+	background-color: #b4b4b4;
+	box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+}
+
+.range-toggle:focus,
+.range-toggle:hover {
+	border-width: 9px;
+	top: -10px;
+}
+
+.range-toggle-max {
+	left: 80%;
+}
+.filter-range legend {
+	margin-bottom: 10px;
+}
+
+.filter-range .btn-submit {
+	display: block;
+	margin: 0 auto;
+	padding: 5px 33px;
+
+	font: inherit;
+	color: inherit;
+	text-transform: uppercase;
+
+	border: 2px solid #fff;
+	border-radius: 2px;
+	background: transparent;
+}
+
+.filter-range .btn-submit:focus,
+.filter-range .btn-submit:hover {
+	color: #000;
+	background-color: #fff;
+	cursor: pointer;
+}
