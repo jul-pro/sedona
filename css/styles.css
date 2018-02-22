@@ -489,6 +489,8 @@ input[type="radio"].visually-hidden {
 	align-items: center;
 	width: 46px;
 	height: 48px;
+
+	/*font-size: 20px;*/
 }
 
 .column {
@@ -513,11 +515,16 @@ input[type="radio"].visually-hidden {
 	line-height: 26px;
 }
 
-.copyright-logo {
+.icon-logo-htmlacademy {
+	font-size: 41px;
+	vertical-align: middle;
+}
+
+/*.copyright-logo {
 	width: 115px;
 	height: 41px;
 	vertical-align: middle;
-}
+}*/
 
 
 .map {
